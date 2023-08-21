@@ -71,6 +71,7 @@ public class MoneyTest
         // Arrange
         var expected = new Money(5, "CHF");
 
+
         // Act
         var actual = Money.Franc(5);
 

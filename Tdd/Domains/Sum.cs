@@ -11,15 +11,15 @@ public class Sum : IExpression
     /// <param name="augend">足される通貨(式)</param>
     /// <param name="addend">足す通貨(式)</param>
     public Sum(IExpression augend, IExpression addend)
-	{
-		this.Augend = augend;
-		this.Addend = addend;
-	}
+    {
+        this.Augend = augend;
+        this.Addend = addend;
+    }
 
-	/// <summary>
-	/// 足される通貨(式)
-	/// </summary>
-	public IExpression Augend { get; init; }
+    /// <summary>
+    /// 足される通貨(式)
+    /// </summary>
+    public IExpression Augend { get; init; }
 
     /// <summary>
     /// 足す通貨(式)
@@ -43,15 +43,14 @@ public class Sum : IExpression
     /// <param name="to">通貨の種類</param>
     /// <returns>通貨オブジェクト</returns>
     public Money Reduce(Bank bank, string to)
-	{
-		var augend = bank.Reduce(Augend, to);
-		var addend = bank.Reduce(Addend, to);
+    {
+        var augend = bank.Reduce(Augend, to);
+        var addend = bank.Reduce(Addend, to);
         return new Money(augend.Amount + addend.Amount, to);
-	}
+    }
 
     public IExpression Times(int multiplier)
     {
         return new Sum(Augend.Times(multiplier), Addend.Times(multiplier));
     }
 }
-

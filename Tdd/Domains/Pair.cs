@@ -10,21 +10,21 @@ public class Pair : IEquatable<Pair>
     /// </summary>
     /// <param name="from">元の通貨</param>
     /// <param name="to">変換先の通貨</param>
-	public Pair(string from, string to)
-	{
-		this.From = from;
-		this.To = to;
+    public Pair(string from, string to)
+    {
+        this.From = from;
+        this.To = to;
     }
 
     /// <summary>
     /// 元の通貨
     /// </summary>
-	public string From { get; init; }
+    public string From { get; init; }
 
     /// <summary>
     /// 変換先の通貨
     /// </summary>
-	public string To { get; init; }
+    public string To { get; init; }
 
     public override bool Equals(object? obj)
     {
@@ -53,4 +53,3 @@ public class Pair : IEquatable<Pair>
         return !(left == right);
     }
 }
-

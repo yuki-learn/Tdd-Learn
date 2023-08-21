@@ -21,10 +21,10 @@ public class Money : IExpression, IEquatable<Money>
     /// <param name="amount">数量</param>
     /// <param name="currency">通貨の種類</param>
     public Money(int amount, string currency)
-	{
+    {
         this.Amount = amount;
         this.Currency = currency;
-	}
+    }
 
     /// <summary>
     /// 指定した数量のドルを返す
