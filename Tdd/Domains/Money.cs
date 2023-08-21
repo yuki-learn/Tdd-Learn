@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Tdd.Domains;
+﻿namespace Tdd.Domains;
 
 /// <summary>
 /// 通貨オブジェクト
@@ -127,4 +125,3 @@ public class Money : IExpression, IEquatable<Money>
         return !(left == right);
     }
 }
-

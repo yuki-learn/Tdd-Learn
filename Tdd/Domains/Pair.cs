@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Tdd.Domains;
+﻿namespace Tdd.Domains;
 
 /// <summary>
 /// 通貨レート使用するペアクラス

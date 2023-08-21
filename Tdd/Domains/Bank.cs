@@ -1,7 +1,4 @@
-﻿using System;
-using System.Reflection.Metadata.Ecma335;
-
-namespace Tdd.Domains;
+﻿namespace Tdd.Domains;
 
 public class Bank
 {

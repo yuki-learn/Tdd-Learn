@@ -1,5 +1,4 @@
-﻿using System;
-namespace Tdd.Domains;
+﻿namespace Tdd.Domains;
 
 /// <summary>
 /// 通貨の加算クラス
